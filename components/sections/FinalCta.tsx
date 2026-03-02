@@ -1,16 +1,7 @@
-"use client";
-
-import { useCallback } from "react";
 import Button from "@/components/ui/Button";
 import SectionLabel from "@/components/ui/SectionLabel";
 
-/** TODO: Replace with your real Calendly URL */
-const CALENDLY_URL = "https://calendly.com/heena-consulting/20min";
-
 export default function FinalCta() {
-    const openCalendly = useCallback(() => {
-        window.open(CALENDLY_URL, "_blank", "noopener,noreferrer");
-    }, []);
 
     return (
         <section
@@ -41,7 +32,7 @@ export default function FinalCta() {
                 </p>
 
                 <div className="flex flex-wrap gap-4 mt-4">
-                    <Button variant="primary" onClick={openCalendly} className="px-14 py-4">
+                    <Button variant="primary" as="a" href="/book" className="px-14 py-4">
                         Book Your Transformation
                     </Button>
                     <Button variant="ghost-light" as="a" href="#services" className="px-10 py-4">

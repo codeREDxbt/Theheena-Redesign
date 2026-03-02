@@ -12,7 +12,7 @@ const QUICK_LINKS = [
 
 export default function Footer() {
     return (
-        <footer className="bg-charcoal text-ivory/80">
+        <footer id="contact" className="bg-charcoal text-ivory/80">
             {/* Main grid */}
             <div className="max-w-[1280px] mx-auto px-8 md:px-10 pt-16 pb-8 grid grid-cols-1 md:grid-cols-3 gap-12">
 

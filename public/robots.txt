@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://theheena.com
+
+# Sitemaps
+Sitemap: https://theheena.com/sitemap.xml
