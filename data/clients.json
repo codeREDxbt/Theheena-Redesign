@@ -1,0 +1,105 @@
+[
+    {
+        "region": "Abu Dhabi",
+        "clients": [
+            {
+                "name": "Student",
+                "logoSrc": "/images/clients/student.png"
+            },
+            {
+                "name": "Apollo Hospitals",
+                "logoSrc": "/images/clients/apollo.png"
+            }
+        ]
+    },
+    {
+        "region": "India",
+        "clients": [
+            {
+                "name": "Apollo Hospitals",
+                "logoSrc": "/images/clients/apollo.png"
+            },
+            {
+                "name": "Adobe",
+                "logoSrc": "/images/clients/adobe.png"
+            },
+            {
+                "name": "Sheroes",
+                "logoSrc": "/images/clients/sheroes.png"
+            },
+            {
+                "name": "FashionTV",
+                "logoSrc": "/images/clients/fashiontv.png"
+            },
+            {
+                "name": "Metro Buildtech",
+                "logoSrc": "/images/clients/metro.png"
+            },
+            {
+                "name": "Rotary Club",
+                "logoSrc": "/images/clients/rotary.png"
+            },
+            {
+                "name": "IID",
+                "logoSrc": "/images/clients/iid.png"
+            },
+            {
+                "name": "Model Creators",
+                "logoSrc": "/images/clients/model-creators.png"
+            },
+            {
+                "name": "Beebay",
+                "logoSrc": "/images/clients/beebay.png"
+            },
+            {
+                "name": "Sheratal",
+                "logoSrc": "/images/clients/sheratal.png"
+            },
+            {
+                "name": "Tajurba",
+                "logoSrc": "/images/clients/tajurba.png"
+            },
+            {
+                "name": "HomeMakers",
+                "logoSrc": "/images/clients/homemakers.png"
+            },
+            {
+                "name": "Arlin",
+                "logoSrc": "/images/clients/arlin.png"
+            },
+            {
+                "name": "Habitat",
+                "logoSrc": "/images/clients/habitat.png"
+            },
+            {
+                "name": "Gullybaba",
+                "logoSrc": "/images/clients/gullybaba.png"
+            },
+            {
+                "name": "igp.com",
+                "logoSrc": "/images/clients/igp.png"
+            }
+        ]
+    },
+    {
+        "region": "Singapore",
+        "clients": [
+            {
+                "name": "Mahabir Banwar Jewellers",
+                "logoSrc": "/images/clients/mahabir.png"
+            },
+            {
+                "name": "Sangini",
+                "logoSrc": "/images/clients/sangini.png"
+            },
+            {
+                "name": "Hum Fauji",
+                "logoSrc": "/images/clients/humfauji.png"
+            },
+            {
+                "name": "Doctor",
+                "logoSrc": "/images/clients/doctor.png"
+            }
+        ]
+    }
+]
