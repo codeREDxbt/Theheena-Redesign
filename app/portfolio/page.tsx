@@ -5,17 +5,24 @@ import SectionLabel from "@/components/ui/SectionLabel";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Professional Portfolio | Heena',
-    description: 'Explore a curated gallery of professional styling and image consulting transformations by India\'s leading MSME-recognized Image Consultant.',
+    title: 'Professional Styling Portfolio | Top Image Consultant India | The Heena',
+    description: 'Explore a curated gallery of professional styling, corporate power dressing, and image consulting transformations by India\'s leading MSME-recognized Image Consultant.',
+    alternates: {
+        canonical: "https://theheena-redesign.vercel.app/portfolio",
+    },
 }
 
 // The array mapping directly to the provided image transformations and examples.
 const PORTFOLIO_ITEMS = [
+    { id: "achievement_collage", caption: "Global Recognition & Highlights", aspect: "aspect-square", src: "/images/portfolio/achievement_collage_hd.png", objectFit: "object-cover", hasBorder: false },
     { id: "award", caption: "MSME Recognition", aspect: "aspect-square", src: "/images/portfolio/award.png", objectFit: "object-cover", hasBorder: false },
+    { id: "achievement_news", caption: "News National: Expert Feature", aspect: "aspect-video", src: "/images/portfolio/achievement_news_hd.png", objectFit: "object-cover", hasBorder: false },
     { id: "book", caption: "Author & Thought Leader", aspect: "aspect-[3/4]", src: "/images/portfolio/book.png", objectFit: "object-cover", hasBorder: false },
     { id: "desk", caption: "Professional Image Consulting", aspect: "aspect-[4/5]", src: "/images/portfolio/desk.png", objectFit: "object-cover", hasBorder: false },
+    { id: "achievement_iid_1", caption: "IID Leadership Award", aspect: "aspect-square", src: "/images/portfolio/achievement_iid_1_hd.png", objectFit: "object-cover", hasBorder: false },
     { id: "blazer", caption: "Custom Styling & Design", aspect: "aspect-[3/4]", src: "/images/portfolio/blazer.png", objectFit: "object-contain", hasBorder: true },
     { id: "mens", caption: "Versatile Styling", aspect: "aspect-[4/3]", src: "/images/portfolio/mens.png", objectFit: "object-contain", hasBorder: true },
+    { id: "achievement_iid_2", caption: "Industrial Development Series", aspect: "aspect-[4/3]", src: "/images/portfolio/achievement_iid_2_hd.png", objectFit: "object-cover", hasBorder: false },
     { id: "award2", caption: "Global Client Trust", aspect: "aspect-[4/3]", src: "/images/portfolio/award2.png", objectFit: "object-cover", hasBorder: false },
     { id: "interview", caption: "Media & Press", aspect: "aspect-video", src: "/images/portfolio/interview.png", objectFit: "object-cover", hasBorder: false },
     { id: "nationtalkshow", caption: "Leadership Summit", aspect: "aspect-video", src: "/images/portfolio/nationtalkshow.png", objectFit: "object-cover", hasBorder: false },

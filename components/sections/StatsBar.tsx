@@ -6,11 +6,11 @@ import { useEffect } from "react";
 import SectionLabel from "@/components/ui/SectionLabel";
 
 const STATS = [
-    { value: "4+", label: "Years Experience" },
-    { value: "119+", label: "Business Owners" },
-    { value: "85+", label: "Professionals" },
-    { value: "8391+", label: "Group Session Members" },
-    { value: "9+", label: "Fashion Shows" },
+    { value: "7+", label: "Years Experience" },
+    { value: "321+", label: "Business Owners" },
+    { value: "259+", label: "Professionals" },
+    { value: "15k+", label: "Group Session Members" },
+    { value: "5+", label: "Fashion Shows" },
 ];
 
 function AnimatedNumber({ raw }: { raw: string }) {

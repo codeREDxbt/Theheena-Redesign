@@ -1,38 +1,76 @@
-[
-    {
-        "name": "Dinesh Singla",
-        "role": "Business Owner",
-        "label": "Testimonial",
-        "videoId": "uZkUCx1Rpd4"
-    },
-    {
-        "name": "Anuj Mittal",
-        "role": "Entrepreneur",
-        "label": "Authority Building",
-        "videoId": "lYzoG749QEE"
-    },
-    {
-        "name": "Divyanshu Agnihotri",
-        "role": "Startup Founder",
-        "label": "Transformation Journey",
-        "videoId": "1bRmW8jBrbk"
-    },
-    {
-        "name": "Peeyush Jain",
-        "role": "Professional",
-        "label": "Image Consulting",
-        "videoId": "q5D0rMjgQxU"
-    },
-    {
-        "name": "Rhythm",
-        "role": "Client",
-        "label": "Color & Blazer Demo",
-        "videoId": "D-el7ShXgck"
-    },
-    {
-        "name": "Asootosh Kant",
-        "role": "The Power Connector",
-        "label": "Testimonial",
-        "videoId": "yeqwVoNbnRc"
-    }
-]
+{
+    "clientTestimonials": [
+        {
+            "name": "Dinesh Singla",
+            "role": "Business Owner",
+            "label": "Client Transformation",
+            "videoId": "uZkUCx1Rpd4",
+            "description": "A comprehensive review of the physical and psychological impact of a complete image overhaul."
+        },
+        {
+            "name": "Anuj Mittal",
+            "role": "Entrepreneur",
+            "label": "Authority Building",
+            "videoId": "lYzoG749QEE",
+            "description": "How professional image consulting helped project authority and confidence in business leadership."
+        },
+        {
+            "name": "Peeyush Jain",
+            "role": "Professional",
+            "label": "Image Consulting",
+            "videoId": "q5D0rMjgQxU",
+            "description": "An in-depth look at the first impression mastery achieved through specialized consulting."
+        },
+        {
+            "name": "Consultation Review",
+            "role": "Executive",
+            "label": "Executive Presence",
+            "videoId": "sfhaMJr0Xs0",
+            "description": "Mastering first impressions and the subtle art of executive body language."
+        },
+        {
+            "name": "Transformation Story",
+            "role": "Professional",
+            "label": "Style Evolution",
+            "videoId": "8FvFTDD4H3Q",
+            "description": "The journey from a corporate professional to a style authority through curated grooming."
+        },
+        {
+            "name": "Business Leadership",
+            "role": "CEO",
+            "label": "Leadership Presence",
+            "videoId": "tvT4k0dkCNM",
+            "description": "Aligning visual appearance with high-level leadership goals and business values."
+        },
+        {
+            "name": "Entrepreneur Journey",
+            "role": "Founder",
+            "label": "Image Overhaul",
+            "videoId": "D-Jzx3YRdxM",
+            "description": "A complete visual transformation that reflected the founder's growing business aspirations."
+        }
+    ],
+    "spouseTestimonials": [
+        {
+            "name": "Client Family Feedback",
+            "role": "Perspective",
+            "label": "Spouse Review",
+            "videoId": "7SxW2R0Anb4",
+            "description": "Reflecting on the positive behavioral and social impact of the image transformation journey."
+        },
+        {
+            "name": "Professional Feedback",
+            "role": "Testimonial",
+            "label": "Visual Impact",
+            "videoId": "Y7MaCfspZqA",
+            "description": "Discussing the long-term professional benefits and the renewed sense of confidence."
+        },
+        {
+            "name": "Family Review",
+            "role": "Spouse Feedback",
+            "label": "Life Transformation",
+            "videoId": "8JqnSZrMkzA",
+            "description": "A heartfelt testimonial about the visual and emotional impact of professional consulting."
+        }
+    ]
+}

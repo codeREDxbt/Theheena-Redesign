@@ -6,7 +6,7 @@ import videosData from "@/data/testimonials-video.json";
 import type { VideoTestimonial } from "@/types";
 import SectionLabel from "@/components/ui/SectionLabel";
 
-const videos = videosData as VideoTestimonial[];
+const videosDataTyped = videosData as { clientTestimonials: VideoTestimonial[]; spouseTestimonials: VideoTestimonial[] };
 
 function VideoCard({ video }: { video: VideoTestimonial }) {
     const [playing, setPlaying] = useState(false);
@@ -76,25 +76,56 @@ function VideoCard({ video }: { video: VideoTestimonial }) {
 }
 
 export default function VideoTestimonialsSection() {
+    const [activeTab, setActiveTab] = useState<"client" | "spouse">("client");
+
+    const currentVideos = activeTab === "client" 
+        ? videosDataTyped.clientTestimonials 
+        : videosDataTyped.spouseTestimonials;
+
     return (
         <section id="testimonials" className="section-dark py-24" aria-label="Client testimonials">
             <div className="w-full max-w-[1280px] mx-auto px-6 md:px-12 xl:px-20">
 
                 {/* Header */}
-                <div className="text-center mb-16 lg:mb-24 flex flex-col items-center gap-5">
+                <div className="text-center mb-16 lg:mb-20 flex flex-col items-center gap-6">
                     <SectionLabel theme="dark">Real Transformations</SectionLabel>
                     <h2 className="font-display font-bold italic text-4xl md:text-5xl lg:text-[56px] text-ivory leading-[1.1] tracking-tight">
                         Stories From My Clients.
                     </h2>
-                    <p className="font-sans text-[16px] md:text-[18px] text-ivory/70 max-w-[480px] mt-2">
+                    
+                    {/* Toggle Buttons */}
+                    <div className="flex bg-white/5 p-1.5 rounded-none border border-white/10 mt-4">
+                        <button
+                            onClick={() => setActiveTab("client")}
+                            className={`px-8 py-3 text-xs font-bold uppercase tracking-widest transition-all duration-300 ${
+                                activeTab === "client" 
+                                ? "bg-terracotta text-white shadow-lg" 
+                                : "text-ivory/50 hover:text-ivory"
+                            }`}
+                        >
+                            Clients
+                        </button>
+                        <button
+                            onClick={() => setActiveTab("spouse")}
+                            className={`px-8 py-3 text-xs font-bold uppercase tracking-widest transition-all duration-300 ${
+                                activeTab === "spouse" 
+                                ? "bg-terracotta text-white shadow-lg" 
+                                : "text-ivory/50 hover:text-ivory"
+                            }`}
+                        >
+                            Client's Wife
+                        </button>
+                    </div>
+
+                    <p className="font-sans text-[16px] md:text-[18px] text-ivory/70 max-w-[480px] mt-4">
                         Unscripted. Unfiltered. Results that speak.
                     </p>
                 </div>
 
-                {/* 3×2 Video grid */}
+                {/* Video grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-                    {videos.map((video) => (
-                        <VideoCard key={video.name} video={video} />
+                    {currentVideos.map((video) => (
+                        <VideoCard key={`${video.videoId}-${video.name}`} video={video} />
                     ))}
                 </div>
 
@@ -113,3 +144,4 @@ export default function VideoTestimonialsSection() {
         </section>
     );
 }
+
