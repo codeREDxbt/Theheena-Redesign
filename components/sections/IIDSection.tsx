@@ -20,7 +20,7 @@ export default function IIDSection() {
                         {/* Main Image - IID.jpg */}
                         <div className="relative aspect-[4/5] w-full bg-white/5 border border-white/10 overflow-hidden shadow-2xl">
                             <Image
-                                src="/images/Latest images/IID.jpg"
+                                src="/images/latest-images/IID.png"
                                 alt="Heena with MSME Recognition"
                                 fill
                                 className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -31,7 +31,7 @@ export default function IIDSection() {
                         {/* Overlapping Certificate - IID Certificate.jpg */}
                         <div className="absolute -bottom-8 -right-8 w-[70%] aspect-[3/4] bg-white shadow-[0_20px_50px_rgba(0,0,0,0.5)] border-4 border-white/10 z-10 transition-transform duration-500 group-hover:-translate-y-2">
                             <Image
-                                src="/images/Latest images/IID Certificate.jpg"
+                                src="/images/latest-images/IID.png"
                                 alt="MSME Recognition Certificate"
                                 fill
                                 className="object-cover"

@@ -68,7 +68,7 @@ export default function HeroSection() {
             {/* ── Right Pane — Mobile Hero Image (Stacked) ─────────────────── */}
             <div className="lg:hidden relative w-full h-[60vh] mt-8 flex items-end justify-center px-6">
                 <Image
-                    src="/images/Latest images/New hero.png"
+                    src="/images/latest-images/hero.png"
                     alt="Heena – India's Only MSME Recognized Image Consultant and Personal Stylist"
                     fill
                     className="object-contain object-bottom scale-90 origin-bottom"
@@ -80,7 +80,7 @@ export default function HeroSection() {
             {/* ── Right Pane — Desktop Hero Image (56%) ─────────────────────────── */}
             <div className="hidden lg:flex w-[56%] relative items-end justify-center overflow-hidden min-h-screen">
                 <Image
-                    src="/images/Latest images/New hero.png"
+                    src="/images/latest-images/hero.png"
                     alt="Editorial portrait of Heena, top image consultant in India for professional women"
                     fill
                     className="object-contain object-bottom scale-90 lg:scale-100 origin-bottom"
