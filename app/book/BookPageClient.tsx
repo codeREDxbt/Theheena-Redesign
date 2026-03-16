@@ -7,6 +7,37 @@ import { ArrowLeft } from "lucide-react";
 import Button from "@/components/ui/Button";
 
 
+/* ── Social Icons ──────────────────────────────── */
+function LinkedInIcon({ className }: { className?: string }) {
+    return (
+        <svg viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+            <rect width="4" height="12" x="2" y="9" />
+            <circle cx="4" cy="4" r="2" />
+        </svg>
+    );
+}
+
+function InstagramIcon({ className }: { className?: string }) {
+    return (
+        <svg viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+        </svg>
+    );
+}
+
+function WhatsAppIcon({ className }: { className?: string }) {
+    return (
+        <svg viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+            <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
+        </svg>
+    );
+}
+
 export default function BookPage() {
     const [formData, setFormData] = useState({
         name: "",
@@ -28,8 +59,8 @@ export default function BookPage() {
             <section className="
                 w-full md:w-[45%] lg:w-[40%] bg-charcoal text-ivory 
                 flex flex-col justify-between 
-                px-8 py-16 md:px-12 md:py-24 lg:px-20 lg:py-32
-                min-h-[60vh] md:min-h-screen
+                px-6 py-12 md:px-12 md:py-24 lg:px-20 lg:py-32
+                min-h-[50vh] md:min-h-screen
             ">
                 <div className="flex flex-col gap-10 md:gap-12 max-w-[480px]">
                     <Link
@@ -44,7 +75,7 @@ export default function BookPage() {
                         <p className="font-sans text-label uppercase tracking-[0.15em] text-terracotta mb-6">
                             Next Steps
                         </p>
-                        <h1 className="font-display font-semibold text-4xl md:text-5xl lg:text-[56px] leading-[1.1] tracking-tight mb-8">
+                        <h1 className="font-display font-semibold text-[32px] md:text-5xl lg:text-[56px] leading-[1.1] tracking-tight mb-8">
                             Your Image<br />Transformation<br />Starts Here.
                         </h1>
                         <p className="font-sans text-[17px] md:text-[18px] text-ivory/80 leading-relaxed">
@@ -75,18 +106,50 @@ export default function BookPage() {
                     </div>
                 </div>
 
-                <div className="mt-16 md:mt-24 pt-8 border-t border-white/10 flex items-center gap-4">
-                    <div className="w-12 h-12 relative opacity-50 grayscale">
-                        <Image
-                            src="/images/logo.png"
-                            alt="Heena"
-                            fill
-                            className="object-contain brightness-0 invert"
-                        />
+                <div className="mt-16 md:mt-24 flex flex-col gap-8">
+                    <div className="flex items-center gap-6">
+                        <a
+                            href="https://instagram.com/heena_imageconsultant"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Instagram"
+                            className="text-ivory/40 hover:text-terracotta transition-colors duration-300"
+                        >
+                            <InstagramIcon className="w-6 h-6" />
+                        </a>
+                        <a
+                            href="https://www.linkedin.com/in/heena-yadav-7b4b3917a/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="LinkedIn"
+                            className="text-ivory/40 hover:text-terracotta transition-colors duration-300"
+                        >
+                            <LinkedInIcon className="w-6 h-6" />
+                        </a>
+                        <a
+                            href="https://wa.me/918368699873"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="WhatsApp"
+                            className="text-ivory/40 hover:text-terracotta transition-colors duration-300"
+                        >
+                            <WhatsAppIcon className="w-6 h-6" />
+                        </a>
                     </div>
-                    <p className="font-sans text-[12px] text-ivory/50 uppercase tracking-widest leading-relaxed">
-                        Recognized by the<br />Ministry of MSME, Govt. of India
-                    </p>
+
+                    <div className="pt-8 border-t border-white/10 flex items-center gap-4">
+                        <div className="w-12 h-12 relative opacity-50 grayscale">
+                            <Image
+                                src="/images/logo.png"
+                                alt="Heena"
+                                fill
+                                className="object-contain brightness-0 invert"
+                            />
+                        </div>
+                        <p className="font-sans text-[12px] text-ivory/50 uppercase tracking-widest leading-relaxed">
+                            Recognized by the<br />Ministry of MSME, Govt. of India
+                        </p>
+                    </div>
                 </div>
             </section>
 
@@ -94,12 +157,12 @@ export default function BookPage() {
             <section className="
                 w-full md:w-[55%] lg:w-[60%] bg-ivory
                 flex items-center justify-center
-                px-4 py-16 md:p-12 lg:p-20
+                px-6 py-12 md:p-12 lg:p-20
                 min-h-[70vh] md:min-h-screen
             ">
                 <div className="w-full max-w-[560px] flex flex-col items-center justify-center">
 
-                    <h2 className="font-display text-3xl md:text-4xl text-charcoal font-semibold mb-4 text-center">
+                    <h2 className="font-display text-2xl md:text-4xl text-charcoal font-semibold mb-4 text-center">
                         Request a Consultation
                     </h2>
 
@@ -107,26 +170,26 @@ export default function BookPage() {
                         Fill out the form below. We will connect securely via WhatsApp to confirm your slot.
                     </p>
 
-                    <form onSubmit={handleSubmit} className="w-full space-y-5">
+                    <form onSubmit={handleSubmit} className="w-full space-y-6">
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                             <div className="flex flex-col gap-2">
                                 <label className="font-sans text-[12px] tracking-widest uppercase text-charcoal/60 font-semibold">Full Name</label>
-                                <input required type="text" className="w-full bg-transparent border border-charcoal/20 px-4 py-3 rounded-none outline-none focus:border-terracotta font-sans text-charcoal transition-colors" value={formData.name} onChange={e => setFormData({...formData, name: e.target.value})} />
+                                <input required type="text" className="w-full bg-transparent border border-charcoal/20 px-4 py-3.5 rounded-none outline-none focus:border-terracotta font-sans text-charcoal transition-colors" value={formData.name} onChange={e => setFormData({...formData, name: e.target.value})} />
                             </div>
                             <div className="flex flex-col gap-2">
                                 <label className="font-sans text-[12px] tracking-widest uppercase text-charcoal/60 font-semibold">Phone Number</label>
-                                <input required type="tel" className="w-full bg-transparent border border-charcoal/20 px-4 py-3 rounded-none outline-none focus:border-terracotta font-sans text-charcoal transition-colors" value={formData.phone} onChange={e => setFormData({...formData, phone: e.target.value})} />
+                                <input required type="tel" className="w-full bg-transparent border border-charcoal/20 px-4 py-3.5 rounded-none outline-none focus:border-terracotta font-sans text-charcoal transition-colors" value={formData.phone} onChange={e => setFormData({...formData, phone: e.target.value})} />
                             </div>
                         </div>
 
                         <div className="flex flex-col gap-2">
                             <label className="font-sans text-[12px] tracking-widest uppercase text-charcoal/60 font-semibold">Email Address</label>
-                            <input required type="email" className="w-full bg-transparent border border-charcoal/20 px-4 py-3 rounded-none outline-none focus:border-terracotta font-sans text-charcoal transition-colors" value={formData.email} onChange={e => setFormData({...formData, email: e.target.value})} />
+                            <input required type="email" className="w-full bg-transparent border border-charcoal/20 px-4 py-3.5 rounded-none outline-none focus:border-terracotta font-sans text-charcoal transition-colors" value={formData.email} onChange={e => setFormData({...formData, email: e.target.value})} />
                         </div>
 
                         <div className="flex flex-col gap-2">
                             <label className="font-sans text-[12px] tracking-widest uppercase text-charcoal/60 font-semibold">I&apos;m interested in</label>
-                            <select className="w-full bg-transparent border border-charcoal/20 px-4 py-3 rounded-none outline-none focus:border-terracotta font-sans text-charcoal transition-colors appearance-none" value={formData.service} onChange={e => setFormData({...formData, service: e.target.value})}>
+                            <select className="w-full bg-transparent border border-charcoal/20 px-4 py-3.5 rounded-none outline-none focus:border-terracotta font-sans text-charcoal transition-colors appearance-none" value={formData.service} onChange={e => setFormData({...formData, service: e.target.value})}>
                                 <option value="Image Audit">Image Audit</option>
                                 <option value="Wardrobe Editing">Wardrobe Editing</option>
                                 <option value="Personal Shopping">Personal Shopping</option>
@@ -137,7 +200,7 @@ export default function BookPage() {
 
                         <div className="flex flex-col gap-2">
                             <label className="font-sans text-[12px] tracking-widest uppercase text-charcoal/60 font-semibold">Message (Optional)</label>
-                            <textarea rows={4} className="w-full bg-transparent border border-charcoal/20 px-4 py-3 rounded-none outline-none focus:border-terracotta font-sans text-charcoal transition-colors resize-none" value={formData.message} onChange={e => setFormData({...formData, message: e.target.value})}></textarea>
+                            <textarea rows={4} className="w-full bg-transparent border border-charcoal/20 px-4 py-3.5 rounded-none outline-none focus:border-terracotta font-sans text-charcoal transition-colors resize-none" value={formData.message} onChange={e => setFormData({...formData, message: e.target.value})}></textarea>
                         </div>
 
                         <Button type="submit" variant="primary" className="w-full w-full h-14 mt-4 font-bold shadow-lg">
