@@ -6,7 +6,7 @@ const ACHIEVEMENTS = [
         variant: "dark" as const,
         badge: "Ministry of MSME",
         title: "Government of India Recognition",
-        sub: "2022 · Exclusive recognition as Image Consulting partner for the MSME sector",
+        sub: "2021 · Exclusive recognition as Image Consulting partner for the MSME sector",
     },
     {
         variant: "light" as const,

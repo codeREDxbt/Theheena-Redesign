@@ -1,23 +1,17 @@
 "use client";
 
-import { useState } from "react";
 import Image from "next/image";
-import { Play } from "lucide-react";
 import Button from "@/components/ui/Button";
 
 const TIMELINE = [
-    { year: "2014", title: "Clinical Practice", accent: false },
-    { year: "2016", title: "Left Corporate. Completed Soft Skills Training", accent: false },
-    { year: "2019", title: "YMCA Certified Soft Skills Trainer", accent: false },
-    { year: "2021", title: "NGO & Community Image Transformation", accent: false },
-    { year: "2022", title: "Ministry of MSME Recognition by Govt. of India", accent: true },
-    { year: "2024", title: "Instituted Digital Academy Affiliation", accent: false },
+    { year: "2015-16", title: "Technical Consultant (Kryolan Professional Makeup)", accent: false },
+    { year: "2016-Present", title: "Entrepreneur: Heena The Image Consultant", accent: false },
+    { year: "2021-23", title: "Center Director (FashionTV India)", accent: false },
+    { year: "2021", title: "Ministry of MSME Recognition", accent: true },
+    { year: "2021", title: "Solopreneur (Makeup Studio by Heena)", accent: false },
 ];
 
 export default function AboutSection() {
-    const [playing, setPlaying] = useState(false);
-    const videoId = "Ug6FQnLj-SE";
-
     return (
         <section id="about" className="w-full bg-[#f5f0e8] py-16 md:py-20 lg:py-24">
             <div className="max-w-[1280px] mx-auto px-6 md:px-12 xl:px-20">
@@ -25,39 +19,8 @@ export default function AboutSection() {
                     
                     {/* Left Column - Visual Stack */}
                     <div className="w-full lg:w-[42%] flex flex-col gap-6">
-                        {/* Video Card - Now Top Center, Not Overlapped */}
-                        <div className="w-full aspect-video bg-charcoal shadow-2xl overflow-hidden border border-white/10 z-10 group relative h-auto">
-                            {playing ? (
-                                <iframe
-                                    src={`https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`}
-                                    title="About Heena"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowFullScreen
-                                    className="w-full h-full"
-                                />
-                            ) : (
-                                <button
-                                    onClick={() => setPlaying(true)}
-                                    className="relative w-full h-full flex items-center justify-center group"
-                                >
-                                    <Image
-                                        src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
-                                        alt="Video Thumbnail"
-                                        fill
-                                        className="object-cover opacity-60 group-hover:opacity-40 transition-opacity duration-500"
-                                    />
-                                    <div className="w-16 h-16 bg-terracotta text-white flex items-center justify-center rounded-none shadow-lg transform transition-transform group-hover:scale-110 border border-white/20">
-                                        <Play size={32} fill="currentColor" className="ml-1" />
-                                    </div>
-                                    <div className="absolute bottom-4 left-4">
-                                        <p className="text-[11px] font-bold uppercase tracking-widest text-white/80">Watch My Journey</p>
-                                    </div>
-                                </button>
-                            )}
-                        </div>
-
                         {/* Portrait Photo */}
-                        <div className="relative w-full aspect-[4/5] bg-stone-200 overflow-hidden shadow-sm border border-charcoal/5">
+                        <div className="relative w-full aspect-[4/5] bg-stone-200 overflow-hidden shadow-2xl border border-charcoal/5 lg:-mt-12">
                             <Image
                                 src="/images/story-cover.jpeg"
                                 alt="Heena — India's Psychology-Backed Image Consultant and Wardrobe Stylist"
