@@ -15,7 +15,7 @@ export default function FashionTVSection() {
                         <div className="relative group">
                             <div className="relative aspect-[16/10] w-full bg-white/5 border border-white/10 overflow-hidden shadow-2xl">
                                 <Image
-                                    src="/images/latest-images/editorial.png"
+                                    src="/images/portfolio/desk.png"
                                     alt="Heena - Centre Director at Fashion TV"
                                     fill
                                     className="object-cover transition-transform duration-700 group-hover:scale-105"

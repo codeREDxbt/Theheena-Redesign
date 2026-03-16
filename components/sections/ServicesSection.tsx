@@ -125,7 +125,7 @@ export default function ServicesSection() {
                         {/* Right: Diagram */}
                         <div className="relative aspect-square w-full max-w-[600px] mx-auto bg-white shadow-2xl p-4 lg:p-8 rounded-sm">
                             <Image
-                                src="/images/latest-images/editorial.png"
+                                src="/images/latest-images/Editorial.avif"
                                 alt="Heena The Image Consultant Process Diagram for Wardrobe Audit and Color Analysis India"
                                 fill
                                 className="object-contain"

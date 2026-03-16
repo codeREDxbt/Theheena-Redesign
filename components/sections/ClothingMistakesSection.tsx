@@ -37,7 +37,7 @@ export default function ClothingMistakesSection() {
 
                         <div className="relative w-full h-full shadow-2xl overflow-hidden group">
                             <Image
-                                src="/images/serious_menswear_editorial.png" // Serious menswear editorial
+                                src="/images/serious_menswear_editorial.png"
                                 alt="Sharp menswear editorial showcasing tailoring and proper fit"
                                 fill
                                 className="object-cover scale-[1.03] group-hover:scale-[1.08] transition-transform duration-1000 ease-[cubic-bezier(0.25,1,0.5,1)]"

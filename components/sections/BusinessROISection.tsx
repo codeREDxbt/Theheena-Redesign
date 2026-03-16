@@ -72,7 +72,7 @@ export default function BusinessROISection() {
                         {/* Main Image Container */}
                         <div className="relative aspect-[4/5] w-full bg-stone-200 overflow-hidden shadow-2xl border border-charcoal/5 group">
                             <Image
-                                src="/images/latest-images/editorial.png"
+                                src="/images/latest-images/business_roi_visual.png"
                                 alt="Business Professional Flatlay"
                                 fill
                                 className="object-cover transition-transform duration-1000 group-hover:scale-110"

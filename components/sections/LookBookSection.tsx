@@ -128,7 +128,7 @@ export default function MyBookSection() {
                     <div className="lg:col-span-1 flex flex-col gap-6 items-center lg:items-start">
                         <div className="relative w-full max-w-[340px] aspect-[3/4] overflow-hidden border border-charcoal/10 shadow-lg">
                             <Image
-                                src="/images/latest-images/editorial.png"
+                                src="/images/latest-images/Look book holding image.avif"
                                 alt="Heena holding the book"
                                 fill
                                 className="object-cover"
