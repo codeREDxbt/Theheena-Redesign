@@ -123,7 +123,7 @@ export default function Nav() {
                         {/* Social icons */}
                         <div className={`flex items-center gap-4 pl-4 border-l ${scrolled ? "border-white/15" : "border-charcoal/10"}`}>
                             <a
-                                href="https://www.linkedin.com/in/heena-yadav-7b4b3917a/"
+                                href="https://www.linkedin.com/in/heena2016ic/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label="Heena on LinkedIn"
