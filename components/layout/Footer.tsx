@@ -96,9 +96,17 @@ export default function Footer() {
             {/* Bottom bar */}
             <div className="max-w-[1280px] mx-auto px-8 md:px-10 pb-8">
                 <div className="border-t border-white/10 pt-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-2">
-                    <p className="font-sans text-[11px] text-ivory/40">
-                        &copy; 2026 Heena. All rights reserved.
-                    </p>
+    <p className="font-sans text-[11px] text-ivory/40">
+      &copy; 2026 Heena. All rights reserved.
+    </p>
+    <Link
+      href="https://coderedxbt.dev/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="font-sans text-[11px] text-ivory/40 hover:text-ivory/70 transition-colors duration-200"
+    >
+      Designed and Built By Vinayak (codeRED)
+    </Link>
                     <div className="flex gap-6">
                         <Link href="/privacy" className="font-sans text-[11px] text-ivory/40 hover:text-ivory/70 transition-colors duration-200 uppercase tracking-widest">
                             Privacy Policy
