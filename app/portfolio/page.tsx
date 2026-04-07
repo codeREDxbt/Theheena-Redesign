@@ -56,7 +56,7 @@ export default function PortfolioPage() {
                 <div className="flex flex-col gap-6 max-w-3xl">
                     <SectionLabel>Professional Portfolio</SectionLabel>
                     <h1 className="font-display font-medium text-[clamp(42px,6vw,64px)] leading-[1.05] tracking-tight text-charcoal">
-                        Curated <span className="font-bold">Style.</span>
+                        Picture <span className="font-bold">Gallery.</span>
                     </h1>
                     <p className="font-sans text-[18px] md:text-[20px] text-charcoal/70 leading-relaxed font-light max-w-2xl">
                         A visual exploration of transformational image consulting, executive presence engineering, and luxury brand collaborations.

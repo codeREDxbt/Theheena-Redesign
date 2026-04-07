@@ -1,5 +1,47 @@
 [
     {
+        "brand": "Lux",
+        "description": "Indulging in timeless beauty and luxury skin care. A celebration of elegance and glow.",
+        "hashtags": [
+            "Lux",
+            "Beauty",
+            "Glow",
+            "ImageConsultant"
+        ],
+        "likeCount": 1250,
+        "imageSrc": "",
+        "instagramPostId": "DRO3RNrk8z0",
+        "instagramType": "post"
+    },
+    {
+        "brand": "Matrix",
+        "description": "Redefining hair care and styling with Matrix professional solutions. Confidence in every strand.",
+        "hashtags": [
+            "Matrix",
+            "HairCare",
+            "Styling",
+            "Professional"
+        ],
+        "likeCount": 2100,
+        "imageSrc": "",
+        "instagramPostId": "DQKED_nE4w0",
+        "instagramType": "reel"
+    },
+    {
+        "brand": "Lakme",
+        "description": "Iconic beauty meets high-fashion hair care. Elevating your presence with Lakme professional.",
+        "hashtags": [
+            "Lakme",
+            "Beauty",
+            "Fashion",
+            "Professional"
+        ],
+        "likeCount": 1850,
+        "imageSrc": "",
+        "instagramPostId": "DNkVy0sMgCF",
+        "instagramType": "reel"
+    },
+    {
         "brand": "Comfort Zone Fabric Conditioner",
         "description": "Softens, freshens, and preserves fibres that stay in perfect shape wash after wash.",
         "hashtags": [
@@ -28,7 +70,7 @@
     },
     {
         "brand": "Chivri Jewellery",
-        "description": "The craftsmanship and authenticity are top-notch — the perfect accessory for any outfit.",
+        "description": "The craftsmanship and authenticity are top-notch \u2014 the perfect accessory for any outfit.",
         "hashtags": [
             "chivri",
             "aestheticistheory",
@@ -42,7 +84,7 @@
     },
     {
         "brand": "Dove",
-        "description": "Gentle care that really works — because beautiful hair starts with the right routine.",
+        "description": "Gentle care that really works \u2014 because beautiful hair starts with the right routine.",
         "hashtags": [
             "dove",
             "haircare",
@@ -65,45 +107,6 @@
         "likeCount": 845,
         "imageSrc": "/images/influencer/brand.jpg",
         "instagramPostId": "DULmX-MjHbZ",
-        "instagramType": "reel"
-    },
-    {
-        "brand": "Executive Presence",
-        "description": "Commanding a room starts with confidence and the right non-verbal communication cues.",
-        "hashtags": [
-            "executivecoaching",
-            "leadership",
-            "imageconsulting"
-        ],
-        "likeCount": 612,
-        "imageSrc": "/images/influencer/executive.jpg",
-        "instagramPostId": "DUYEAUFk1k5",
-        "instagramType": "reel"
-    },
-    {
-        "brand": "Style Masterclass",
-        "description": "Understanding your body architecture to build a wardrobe that works effortlessly for you.",
-        "hashtags": [
-            "stylemasterclass",
-            "wardrobeconsulting",
-            "fashionpsychology"
-        ],
-        "likeCount": 921,
-        "imageSrc": "/images/influencer/style.jpg",
-        "instagramPostId": "DUIyzomE5qG",
-        "instagramType": "reel"
-    },
-    {
-        "brand": "Corporate Styling",
-        "description": "Elevating corporate dress codes without sacrificing personal style or professional authority.",
-        "hashtags": [
-            "corporatestyle",
-            "powerdressing",
-            "imageconsultant"
-        ],
-        "likeCount": 788,
-        "imageSrc": "/images/influencer/corporate.jpg",
-        "instagramPostId": "DROwZtZk9y4",
         "instagramType": "reel"
     }
 ]

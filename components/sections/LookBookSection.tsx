@@ -14,31 +14,31 @@ const FEATURES = [
 const CHAPTERS = [
     {
         id: "ch1",
-        title: "01 / The Art of Suiting",
-        excerpt: "A well-cut suit is the modern gentleman's armor. It communicates authority before you utter a single word. Understand that fit always supersedes brand. A custom-tailored $300 suit will endlessly outshine an ill-fitting $3,000 designer label.",
-        img: "https://lh3.googleusercontent.com/aida-public/AB6AXuA2wZbDSja-Wpm_FPeku_Ja9Uj_16x33R0FPu8exR3TH9MprDAfkKkLMYlpShNfYEEPmdozXd4RG5fMIq_-sWujT7Mu3Zdp8Mi6NXN7ZLNQ3kDM7W1QuWL3pxOdC-MgRQMFP9-OujUUL876FkLFMtsq15225bEtL8O18pRCp1qU1z_c46ampHsYVg9L3hIZbSfzHpjbsDZcMmSaiqS7srJS28uQnzzMjFKwmY4t0HfsAfpC6SWoXV4Mnc9jmgda1Md5zUtp8rF615Y",
-        alt: "Man in formal suit adjusting cufflinks"
+        title: "01 / The Color Theory",
+        excerpt: "Understanding your personal coloring is the first step to wardrobe mastery. Whether you have light skin with light hair or a darker complexion, your choice of colors should complement your natural tones. White, navy, and charcoal are universal, but the right pastel or jewel tone can define your presence.",
+        img: "/images/latest-images/color-theory.png",
+        alt: "Professional editorial color theory setup"
     },
     {
         id: "ch2",
-        title: "02 / Cultural Elegance",
-        excerpt: "Traditional wear is not merely attire; it is an inheritance. When wearing a sherwani or bandhgala, pay meticulous attention to the fabric drape and the subtle contrast of a pocket square. It is the marriage of heritage and modern tailoring.",
-        img: "https://lh3.googleusercontent.com/aida-public/AB6AXuAymFuwcoEs8l8otL3b1OhG7vNEvwUXs8Jzim8EUldq24eHas20fBPt76kijcGsIDhWT2HIJCXhBO5BrNJv3ZOuXv1rjL0Nftx5N46ubN2vgSmBZq7Mnfp2clQ5nZKy0E3n5RueRJsPSADtLaDy71d9lqgD2xux2mcX5PofDXhR4id88cbh2lXV-d98_8HjlZO8xW-7B-NQhZHz_9IQ0YZkKO1foUM6eD3eA4X_72vUDPwhvihoF-murZdtbRr1iufOIv8DwGtMYIM",
-        alt: "Traditional Indian wedding sherwani details"
+        title: "02 / Body Type Mastery",
+        excerpt: "Every man's body is a unique architecture. Whether you have an athletic build, a slim frame, or a fuller body, the goal is always to create a balanced silhouette. Vertical lines can add height, while structured jackets can broaden shoulders. Dress for the body you have today to command the room with confidence.",
+        img: "/images/latest-images/body-type.png",
+        alt: "Tailored outfits for different body types"
     },
     {
         id: "ch3",
-        title: "03 / Casual Mastery",
-        excerpt: "Casual does not mean careless. The gentleman on his day off still commands the room. Linen shirts paired with structured trousers offer a masterclass in relaxed elegance, perfect for the Indian climate without sacrificing sophistication.",
-        img: "https://lh3.googleusercontent.com/aida-public/AB6AXuDwBGPxkhMpa-bVZLoZa_t3gri4qv7jBeN0Se-oxq04IwcWjUl-nNUyrojQNZaVgInARRTd_kfLlsJgnQmNHruRHYU2L8joo9zUcPCaudMliz46hM7SFCysxYZ7H9Fg_rKaYG0AvroH5Yl0zGV-6qTfefejlIJjlEqP3jhQsIUX8aVbMOUs_gC0ih4gYqUs3RA1ZlcY0aGecx112hxI2IYYjsyRpg_MKIfYn5BZP7z32ZA1DNlKqcak7bcTav-ENMWLvBcS-yFPS9s",
-        alt: "Casual linen shirt and trousers outfit"
+        title: "03 / Essential Footwear",
+        excerpt: "Shoes are the foundation of your visual identity. A classy gentleman understands that brown and black formal shoes are non-negotiable basics. Pair them with white minimalist sneakers for a casual yet sophisticated edge. Remember, quality footwear transforms not just your outfit, but your entire body language.",
+        img: "/images/latest-images/footwear.png",
+        alt: "Curated collection of premium men's shoes"
     },
     {
         id: "ch4",
-        title: "04 / The Details",
-        excerpt: "The watch you wear, the pen you sign with, the grooming of your beard — these micro-signals construct your macro-image. True luxury whispers, it never screams. Discover how the subtle accessories define the unseen caliber of a man.",
-        img: "https://lh3.googleusercontent.com/aida-public/AB6AXuB8sKF_COUxXThnC6Sw2tA1eD2a_SOyfAqbOX1TWb1DQ1HbkeJ4nAUnFD34si0u5k381SdvpfAg2H_5UmWRl36HPp1V2SfehLLL-hkoGf_IbzJ-pzrIbmMwWCYSpLqYTG6j_N8o1nqcE089DWcvIJ3EssgtDUDHx5eEJpFonl1UbpJvo1icvp0PNe6jHGXaCW5FIHvlYbNaVZRCe1kH2NJyaLI0Tnx1lVa0Rckw75PU7msSvb0p1QdYpWI0AqKVkGWpwcNnbcxF5D8",
-        alt: "Close up of grooming accessories and watch"
+        title: "04 / The Watch Guide",
+        excerpt: "A watch is more than a timekeeper; it's a silent communicator of your standard. From classic dress watches with leather bands to sturdy sports chronographs, choosing the right timepiece for the occasion is a crucial skill. It's the micro-signal that defines the macro-image of a modern gentleman.",
+        img: "/images/latest-images/watch_guide.png",
+        alt: "Close-up of a luxury mechanical watch"
     }
 ];
 
@@ -175,8 +175,8 @@ export default function MyBookSection() {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     {CHAPTERS.map((item, i) => (
-                        <button 
-                            key={i} 
+                        <button
+                            key={i}
                             onClick={() => setActiveChapter(item)}
                             className="group flex flex-col items-center text-center cursor-pointer text-left focus:outline-none"
                             aria-label={`Preview ${item.title}`}
@@ -202,21 +202,21 @@ export default function MyBookSection() {
             {activeChapter && (
                 <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-6 md:p-12">
                     {/* Backdrop */}
-                    <div 
+                    <div
                         className="absolute inset-0 bg-charcoal/80 backdrop-blur-sm transition-opacity"
                         onClick={() => setActiveChapter(null)}
                     />
-                    
+
                     {/* Modal Content */}
                     <div className="relative w-full max-w-[1000px] max-h-[90vh] bg-ivory shadow-2xl overflow-y-auto flex flex-col md:flex-row animate-in fade-in zoom-in-95 duration-300">
-                        
+
                         {/* Close button */}
-                        <button 
+                        <button
                             onClick={() => setActiveChapter(null)}
                             className="absolute top-4 right-4 z-10 w-10 h-10 bg-white/80 hover:bg-white text-charcoal rounded-full flex items-center justify-center shadow-sm transition-colors"
                         >
                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1 1L13 13M1 13L13 1" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+                                <path d="M1 1L13 13M1 13L13 1" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
                             </svg>
                         </button>
 
@@ -235,7 +235,7 @@ export default function MyBookSection() {
                             <p className="font-sans text-[11px] uppercase tracking-[0.2em] text-terracotta font-bold mb-6">
                                 Exclusive Excerpt
                             </p>
-                            
+
                             <h2 className="font-display text-3xl md:text-4xl text-charcoal font-medium leading-[1.1] mb-8">
                                 {activeChapter.title.split(' / ')[1]}
                             </h2>
