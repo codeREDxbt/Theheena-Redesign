@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
@@ -47,6 +47,15 @@ export default function BookPage() {
         message: ""
     });
 
+    // State to show success message after form submission
+    const [isSubmitted, setIsSubmitted] = useState(false);
+
+    // Reset success message when user starts typing in any field
+    /* This ensures the success message disappears if the user wants to submit another query */
+    useEffect(() => {
+        setIsSubmitted(false);
+    }, [formData.name, formData.email, formData.phone, formData.message]);
+
     //updated handleSubmit function for handing leads
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
@@ -68,6 +77,18 @@ export default function BookPage() {
         } catch (error) {
             console.error("Formspree error:", error);
         }
+        
+        // Reset form fields
+        setFormData({
+            name: "",
+            email: "",
+            phone: "",
+            service: "Image Audit",
+            message: ""
+        });
+        
+        // Show success message on screen
+        setIsSubmitted(true);
     
         // Keeping existing WhatsApp behavior unchanged
         const text = `Hi Heena, I'd like to book a discovery call. \n\nName: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nInterested in: ${formData.service}\n\nMessage: ${formData.message}`;
@@ -186,6 +207,14 @@ export default function BookPage() {
                     <h2 className="font-display text-2xl md:text-4xl text-charcoal font-semibold mb-4 text-center">
                         Request a Consultation
                     </h2>
+
+                    {/* Success message shown after form submission */}
+                    {isSubmitted && (
+                        <div className="text-center py-8 bg-green-50 border border-green-200 rounded-md mb-8">
+                            <p className="text-green-700 font-medium">Thank You! Your request has been received.</p>
+                            <p className="text-green-600 text-sm mt-1">We will connect with you shortly via WhatsApp.</p>
+                        </div>
+                    )}
 
                     <p className="font-sans text-charcoal/60 text-[16px] leading-relaxed mb-10 text-center max-w-[400px]">
                         Fill out the form below. We will connect securely via WhatsApp to confirm your slot.
