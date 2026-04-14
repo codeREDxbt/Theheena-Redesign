@@ -47,8 +47,35 @@ export default function BookPage() {
         message: ""
     });
 
-    const handleSubmit = (e: React.FormEvent) => {
+    /*const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
+        const text = `Hi Heena, I'd like to book a discovery call. \n\nName: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nInterested in: ${formData.service}\n\nMessage: ${formData.message}`;
+        window.open(`https://wa.me/918368699873?text=${encodeURIComponent(text)}`, '_blank');
+    };*/
+
+    //updated handleSubmit function for handing leads
+    const handleSubmit = async (e: React.FormEvent) => {
+        e.preventDefault();
+    
+        // Send lead to Formspree
+        try {
+            await fetch("https://formspree.io/f/myklzjqb", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    full_name: formData.name,
+                    phone: formData.phone,
+                    email: formData.email,
+                    interested_in: formData.service,
+                    message: formData.message || "No message",
+                })
+            });
+            console.log("Lead saved to Formspree");
+        } catch (error) {
+            console.error("Formspree error:", error);
+        }
+    
+        // Keeping existing WhatsApp behavior unchanged
         const text = `Hi Heena, I'd like to book a discovery call. \n\nName: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nInterested in: ${formData.service}\n\nMessage: ${formData.message}`;
         window.open(`https://wa.me/918368699873?text=${encodeURIComponent(text)}`, '_blank');
     };
