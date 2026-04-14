@@ -47,12 +47,6 @@ export default function BookPage() {
         message: ""
     });
 
-    /*const handleSubmit = (e: React.FormEvent) => {
-        e.preventDefault();
-        const text = `Hi Heena, I'd like to book a discovery call. \n\nName: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nInterested in: ${formData.service}\n\nMessage: ${formData.message}`;
-        window.open(`https://wa.me/918368699873?text=${encodeURIComponent(text)}`, '_blank');
-    };*/
-
     //updated handleSubmit function for handing leads
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
