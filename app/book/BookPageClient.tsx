@@ -50,8 +50,6 @@ export default function BookPage() {
     // State to show success message after form submission
     const [isSubmitted, setIsSubmitted] = useState(false);
 
-    // Reset success message when user starts typing in any field
-    /* This ensures the success message disappears if the user wants to submit another query */
     // Hide success message when user starts typing anywhere in the form for a new submission
     useEffect(() => {
         if (isSubmitted) {
