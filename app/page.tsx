@@ -1,6 +1,7 @@
 import dynamic from "next/dynamic";
 import Nav from "@/components/layout/Nav";
 import Footer from "@/components/layout/Footer";
+import ScrollToTop from "@/components/ui/ScrollToTop";
 import HeroSection from "@/components/sections/HeroSection";
 import SocialProofBar from "@/components/sections/SocialProofBar";
 import ServingClientsSection from "@/components/sections/ServingClientsSection";
@@ -82,6 +83,7 @@ export default function HomePage() {
         <FaqSection />
         <FinalCta />
         <BrandCollaborations />
+        <ScrollToTop />
       </main>
       <Footer />
     </>
