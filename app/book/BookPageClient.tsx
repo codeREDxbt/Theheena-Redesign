@@ -215,9 +215,19 @@ export default function BookPage() {
 
                     {/* Success message shown after form submission */}
                     {isSubmitted && (
-                        <div className="text-center px-4 py-3.5 bg-green-50 border border-green-200 rounded-md mb-8">
-                            <p className="text-green-700 font-medium">Thank You! Your request has been received.</p>
-                            <p className="text-green-600 text-sm mt-1">We will connect with you shortly via WhatsApp.</p>
+                        <div className="w-full max-w-[560px] mx-auto bg-green-50 border border-green-300 rounded-xl p-8 text-center mb-10">
+                            <div className="w-14 h-14 mx-auto mb-5 flex items-center justify-center border-2 border-green-600 rounded-full">
+                                <span className="text-3xl text-green-600">✓</span>
+                            </div>
+                            <h3 className="text-2xl font-semibold text-green-800 mb-2">
+                                Thank You!
+                            </h3>
+                            <p className="text-green-700 text-[17px] leading-relaxed">
+                                Your consultation request has been received successfully.
+                            </p>
+                            <p className="text-green-600 text-[15px] mt-2">
+                                We will connect with you shortly via WhatsApp.
+                            </p>
                         </div>
                     )}
 
