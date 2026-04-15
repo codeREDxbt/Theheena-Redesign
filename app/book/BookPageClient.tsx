@@ -52,9 +52,16 @@ export default function BookPage() {
 
     // Reset success message when user starts typing in any field
     /* This ensures the success message disappears if the user wants to submit another query */
+    // Hide success message when user starts typing anywhere in the form for a new submission
     useEffect(() => {
-        setIsSubmitted(false);
-    }, [formData]);
+        if (isSubmitted) {
+            const hideSuccess = () => setIsSubmitted(false);
+            document.addEventListener('input', hideSuccess);
+            
+            // Cleanup when component unmounts or isSubmitted changes
+            return () => document.removeEventListener('input', hideSuccess);
+        }
+    }, [isSubmitted]);
 
     //updated handleSubmit function for handing leads
     const handleSubmit = async (e: React.FormEvent) => {
