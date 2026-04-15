@@ -216,7 +216,7 @@ export default function BookPage() {
 
                     {/* Success message shown after form submission */}
                     {isSubmitted && (
-                        <div className="w-full max-w-[560px] mx-auto bg-green-50 border border-green-300 rounded-2xl p-8 text-center mb-10">
+                        <div className="w-full max-w-[560px] mx-auto bg-green-50 border border-green-300 rounded-2xl p-8 text-center my-8">
                             <CheckCircle className="w-16 h-16 mx-auto mb-5 text-green-600" />
                             <h3 className="text-2xl font-semibold text-green-800 mb-2">
                                 Thank You!
