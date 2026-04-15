@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
+import { CheckCircle } from "lucide-react";
 import Button from "@/components/ui/Button";
 
 
@@ -215,10 +216,8 @@ export default function BookPage() {
 
                     {/* Success message shown after form submission */}
                     {isSubmitted && (
-                        <div className="w-full max-w-[560px] mx-auto bg-green-50 border border-green-300 rounded-xl p-8 text-center mb-10">
-                            <div className="w-14 h-14 mx-auto mb-5 flex items-center justify-center border-2 border-green-600 rounded-full">
-                                <span className="text-3xl text-green-600">✓</span>
-                            </div>
+                        <div className="w-full max-w-[560px] mx-auto bg-green-50 border border-green-300 rounded-2xl p-8 text-center mb-10">
+                            <CheckCircle className="w-16 h-16 mx-auto mb-5 text-green-600" />
                             <h3 className="text-2xl font-semibold text-green-800 mb-2">
                                 Thank You!
                             </h3>
@@ -230,7 +229,6 @@ export default function BookPage() {
                             </p>
                         </div>
                     )}
-
                     <p className="font-sans text-charcoal/60 text-[16px] leading-relaxed mb-10 text-center max-w-[400px]">
                         Fill out the form below. We will connect securely via WhatsApp to confirm your slot.
                     </p>
