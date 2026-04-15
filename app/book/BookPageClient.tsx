@@ -54,7 +54,7 @@ export default function BookPage() {
     /* This ensures the success message disappears if the user wants to submit another query */
     useEffect(() => {
         setIsSubmitted(false);
-    }, [formData.name, formData.email, formData.phone, formData.message]);
+    }, [formData]);
 
     //updated handleSubmit function for handing leads
     const handleSubmit = async (e: React.FormEvent) => {
