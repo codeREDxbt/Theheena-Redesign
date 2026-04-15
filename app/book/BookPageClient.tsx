@@ -215,7 +215,7 @@ export default function BookPage() {
 
                     {/* Success message shown after form submission */}
                     {isSubmitted && (
-                        <div className="text-center py-8 bg-green-50 border border-green-200 rounded-md mb-8">
+                        <div className="text-center px-4 py-3.5 bg-green-50 border border-green-200 rounded-md mb-8">
                             <p className="text-green-700 font-medium">Thank You! Your request has been received.</p>
                             <p className="text-green-600 text-sm mt-1">We will connect with you shortly via WhatsApp.</p>
                         </div>
