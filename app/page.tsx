@@ -1,6 +1,7 @@
 import dynamic from "next/dynamic";
 import Nav from "@/components/layout/Nav";
 import Footer from "@/components/layout/Footer";
+import WhatsAppButton from "@/components/ui/WhatsAppButton";
 import ScrollToTop from "@/components/ui/ScrollToTop";
 import HeroSection from "@/components/sections/HeroSection";
 import SocialProofBar from "@/components/sections/SocialProofBar";
@@ -83,6 +84,7 @@ export default function HomePage() {
         <FaqSection />
         <FinalCta />
         <BrandCollaborations />
+        <WhatsAppButton />
         <ScrollToTop />
       </main>
       <Footer />

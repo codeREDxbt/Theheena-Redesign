@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import SectionLabel from "@/components/ui/SectionLabel";
+import WhatsAppButton from "@/components/ui/WhatsAppButton";
 import ScrollToTop from "@/components/ui/ScrollToTop";
 import { Metadata } from 'next';
 
@@ -134,6 +135,7 @@ export default function PortfolioPage() {
 
             </section>
 
+            <WhatsAppButton />
             <ScrollToTop />
         </main>
     );

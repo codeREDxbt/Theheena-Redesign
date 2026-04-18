@@ -94,7 +94,7 @@ export default function Footer() {
             </div>
 
             {/* Bottom bar */}
-            <div className="max-w-[1280px] mx-auto px-8 md:px-10 pb-8">
+            <div className="max-w-[1280px] mx-auto px-8 md:px-10 pb-32 md:pb-12">
                 <div className="border-t border-white/10 pt-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-2">
     <p className="font-sans text-[11px] text-ivory/40">
       &copy; 2026 Heena. All rights reserved.

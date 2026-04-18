@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import Button from "@/components/ui/Button";
-import { User, LayoutGrid, BookOpen, Mail, ArrowUp, PlayCircle, Instagram } from "lucide-react";
+import { User, LayoutGrid, BookOpen, Mail, PlayCircle, Instagram } from "lucide-react";
 
 // For mobile we map the link to its respective icon
 const NAV_LINKS = [
@@ -166,30 +166,15 @@ export default function Nav() {
                         <Link
                             key={href}
                             href={href}
-                            className="flex-1 flex flex-col items-center justify-center gap-1.5 text-white/50 hover:text-terracotta active:text-terracotta transition-colors duration-200 pt-1"
+                            className="flex-1 flex flex-col items-center justify-center gap-1 text-white/50 hover:text-terracotta active:text-terracotta transition-colors duration-200 pt-1"
                         >
                             <Icon size={20} strokeWidth={1.5} />
-                            <span className="font-sans text-[9px] uppercase tracking-widest leading-none">{label}</span>
+                            <span className="font-sans text-[8px] uppercase tracking-widest leading-none">{label}</span>
                         </Link>
                     ))}
                 </div>
             </nav>
 
-            {/* ── Mobile Scroll To Top ───────────────────────────────────────── */}
-            <button
-                onClick={scrollToTop}
-                className={`
-                    fixed right-[min(20px,5vw)] z-40 md:hidden
-                    flex items-center justify-center w-11 h-11 rounded-full
-                    bg-terracotta text-white shadow-[0_4px_12px_rgba(196,98,45,0.4)] 
-                    border border-white/10
-                    transition-all duration-300
-                    ${scrolled ? "bottom-[calc(80px+env(safe-area-inset-bottom))] opacity-100 translate-y-0" : "bottom-[calc(60px+env(safe-area-inset-bottom))] opacity-0 translate-y-4 pointer-events-none"}
-                `}
-                aria-label="Scroll to top"
-            >
-                <ArrowUp size={20} strokeWidth={2} className="text-white" />
-            </button>
         </>
     );
 }
